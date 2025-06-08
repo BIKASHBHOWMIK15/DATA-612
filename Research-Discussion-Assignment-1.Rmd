@@ -1,0 +1,85 @@
+---
+title: "Research Discussion Assignment 1"
+author: "Bikash Bhowmik"
+date: "08-Jun-2025"
+---
+
+
+This discusses commercial and non-personalized recommender systems, evaluates one real-world case, and explores issues related to attacks on recommender systems.
+
+## Part 1: Commercial Recommender System – Example: Netflix
+
+### How it Works
+
+Netflix primarily uses a **hybrid recommender system**, combining:
+
+- **Collaborative Filtering (CF)**: Based on user behavior—what users with similar preferences watched.
+
+- **Content-Based Filtering**: Uses metadata such as genre, actors, director, etc.
+
+- **Deep Learning**: Neural networks analyze complex patterns in viewing behavior.
+
+### User Experience Evaluation
+
+The technique generally delivers a **very personalized** and engaging experience. However, recommendations may:
+- Reinforce a filter bubble (too much similar content)
+- Struggle when a user’s viewing habits are eclectic or sparse
+
+**Conclusion**: Hybrid systems provide balance and robustness, but still need improvements in diversity and novelty.
+
+
+## Part 2: Non-Personalized Recommenders – Example: Rotten Tomatoes
+
+### Technique
+
+Rotten Tomatoes uses **review aggregation**:
+- Critics' reviews are classified as "Fresh" or "Rotten"
+- The **Tomatometer Score** is the percentage of positive critic reviews
+- User ratings are also aggregated but displayed separately
+
+### Evaluation
+
+Rotten Tomatoes doesn't personalize suggestions, but provides a **quick quality signal**.
+
+### Preference
+
+Between the three (Metacritic, Rotten Tomatoes, IMDB), I prefer **Metacritic** because:
+- It weights reviews based on critic reputation
+- Offers more nuanced scoring (0–100 scale vs binary)
+
+**Non-personalized recommenders** are good for new users or exploring unbiased trends.
+
+
+## Part 3: Attacks on Recommender Systems
+
+### Case Study: IMDb & Christian Bale's Movie
+
+In 2017, IMDb users coordinated to **rate a film poorly before release**, skewing its rating. This is known as a **"review bomb"** attack.
+
+### Similar Examples
+
+- **Brie Larson’s Captain Marvel** on Rotten Tomatoes
+- **Video games** like "The Last of Us Part II" on Metacritic
+- Coordinated social media efforts to manipulate visibility
+
+### Designing Against Attacks
+
+To reduce manipulation:
+
+- **Weight ratings by user credibility** (verified purchases, account age)
+
+- **Delay public ratings** until after release
+
+- **Use anomaly detection** to catch sudden spikes in activity
+
+- **Separate critic and user reviews** and make provenance transparent
+
+**Conclusion**: Recommender systems need robust security and fairness mechanisms to prevent collective abuse.
+
+
+## Conclusion
+
+This notebook explored hybrid commercial recommenders (Netflix), non-personalized methods (Rotten Tomatoes), and the vulnerability of systems to coordinated attacks. Recommenders must balance personalization, diversity, and robustness to manipulation.
+
+
+
