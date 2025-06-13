@@ -1,0 +1,42 @@
+
+---
+title: "Research Discussion Assignment 2"
+author: "Bikash Bhowmik"
+date: "12-Jun-2025"
+---
+
+## Mathematical Techniques (First Half)
+
+Matrix Factorization &amp; ALS (Alternating Least Squares):
+
+One of the primary techniques Spotify uses is ALS, a matrix factorization method suited for implicit data (e.g., user behavior, not ratings).
+Matrix factorization helps reduce the user-item interaction matrix (huge and sparse) into lower-dimensional latent factors.
+The implicit feedback model deals with binary-like preferences (did the user listen or not), not explicit ratings.
+Scalability- ALS works well with&nbsp;Apache Spark, which can distribute the computation efficiently.
+It enables parallel updates of user/item factors, which is crucial for handling Spotify's scale (millions of users and songs).
+Regularization is used to avoid overfitting, and confidence scores are based on user actions (more listens = higher confidence).
+
+
+
+##  Data Engineering &amp; Challenges (Second Half)
+
+Scale of Data:
+
+Spotify processes billions of events daily, including listens, skips, pauses, etc.
+They leverage Apache Spark to manage large-scale data pipelines and to train recommendation models at scale
+
+Implicit Feedback System:
+
+Unlike Netflix or Amazon, Spotify users rarely rate songs.
+Instead, they interpret user engagement (play counts, skip behavior) as preference signals.
+This makes the modeling problem more nuanced and closer to real user behavior.
+
+Cold Start Problem:
+
+A common issue where new users or songs have little to no data.
+Spotify addresses this with hybrid methods — blending collaborative filtering with metadata (e.g., genre, artist).
+
+Offline vs Online Models:
+
+Offline models (trained in batches on Spark) are regularly updated.
+Online signals (e.g., recent listening) are handled through session-based logic or real-time tweaks.
