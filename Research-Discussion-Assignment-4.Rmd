@@ -1,0 +1,35 @@
+---
+title: "Data-612, Research Discussion 4 - Mitigating the Harm of Recommender Systems"
+author: "Bikash Bhowmik"
+date: "2025-06-27"
+output: html_document
+---
+Source: &nbsp;Renee Diresta, Wired.com (2018):&nbsp;Up Next: A Better Recommendation System&nbsp;
+
+Shift from Engagement-Based to Trust-Based Metrics
+
+Recommender systems like those on&nbsp;YouTube often prioritize watch time or click-through rate, inadvertently pushing users toward more extreme content to keep them engaged. Diresta suggests designing algorithms that balance engagement with responsibility. it includes
+
+Penalizing content that has been flagged as harmful or misleading.
+Promoting a wider range of viewpoints and sources, especially on political or social topics.
+
+Introduce “User Agency” Features
+
+Make recommendation rationale transparent by showing why a video or article was suggested. Let users customize or control aspects of the recommendation algorithm( balanced, factual modes). Add circuit breakers to stop rapid spirals into extreme content&nbsp;
+
+Audit and Test Algorithms for Bias
+
+Regular algorithmic audits should test for racial, gender, political, and socio-economic bias in recommendations. Use simulation environments to evaluate how content pathways evolve and whether users are pushed toward harmful content.&nbsp;
+
+Human Oversight and Ethical Guidelines
+
+Establish independent oversight boards to review system performance, especially in high-risk areas like politics, health, and religion , it should involve human moderators and ethicists in algorithm design.
+
+Collaborate with Experts and Civil Society
+
+Platforms should consult with social scientists, educators, and community groups to better understand the real-world effects.&nbsp;&nbsp;
+
+Summary:
+
+Recommender systems play a powerful role in shaping public opinion, behavior, and online discourse. In her article, Diresta emphasizes the need for technologists and platform designers to recognize and take responsibility for the unintended consequences of optimizing solely for engagement. To create safer and more equitable recommendation systems, the focus must shift from maximizing attention to promoting understanding, and from unchecked automation to ethical accountability.
+
